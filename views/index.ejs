@@ -40,7 +40,7 @@ h1,h2,h3{
 
     </style>
 </head>
-<body onload="subscribeUser()">
+<body >
     <div class="topnav">
   <a class="active" id="homenav" href="#home" onclick="openMenu('home')">Home</a>
   <a href="#news" id="websitenav"  onclick="openMenu('website')">Other links</a>
@@ -172,6 +172,6 @@ var prev=document.getElementById("homenav");
   document.getElementById(name).style.display="block";
   }
 </script>
-<script src="../main.js"></script>
+<script onload="subscribeUser()" src="../main.js"></script>
 </body>
 </html>
