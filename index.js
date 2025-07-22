@@ -27,7 +27,10 @@ app.post('/subscribe',bodyParser.json(), (req, res) => {
 
   webpush.sendNotification(subscription, payload).catch(err => console.error(err));
 });
+app.get('/query', (req, res) => {
+console.log(res.body.query);
 
+});
 // Send test push every 60 sec (for demo)
 setInterval(() => {
   
