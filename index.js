@@ -29,7 +29,7 @@ app.post('/subscribe',bodyParser.json(), (req, res) => {
 });
 app.get('/query', (req, res) => {
 console.log(res.body.query);
-
+res.render("index");
 });
 // Send test push every 60 sec (for demo)
 setInterval(() => {
