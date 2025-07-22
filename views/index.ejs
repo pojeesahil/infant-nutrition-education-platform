@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 body{
-background-color: #ffdcdb;
+background-color: #f55c97;
 
 }
 .topnav a {
@@ -30,13 +30,19 @@ iframe{
 padding-block: 20px;padding-left: 20px;
 }
 h1,h2,h3{
-  background-color: #f7cac9;color: white;
+  background-color: #f52d79;color: white;
 }
 
 .topnav a.active {
   background-color:#91a8d0 ;
   color: white;}
 
+  footer{
+    position:fixed;
+    bottom:0%;
+    color:white;
+    background-color:rgb(121, 2, 95);
+  }
 
     </style>
 </head>
@@ -58,9 +64,9 @@ h1,h2,h3{
 </div>
 <div style="display:none;" id="query">
 <h2>Have any Queries?</h2>
-<form action="">
+<form action="/query">
   <label for="">Write your questions/doubts here:</label><br>
-<textarea name="" id=""></textarea><br><br>
+<textarea name="query" id="query"></textarea><br><br>
 <input type="submit" value="Submit" style="background-color: green;">
 
 <input type="reset" value="Clear" style="background-color: blue;">
@@ -157,6 +163,7 @@ Kids healthcare  with Dr.Kishor Giri.YOUTUBE</a>
 
 
 </div>
+<footer id="footer">© 2025 infant-nutrition-education-platform. All rights reserved.</footer>
 <script>
   var list=["home","website","contact","query"];
 var prev=document.getElementById("homenav");
